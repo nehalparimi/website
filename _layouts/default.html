@@ -7,16 +7,8 @@
     {% include header.html %}
     <div class="full-hero hero-name">
         <h1>I'm an h1</h1>
-        <ul class="social-list">
-            <li>
-                <a href="http://example.com/" class="social-link fb">Fb</a>
-            </li>
-            <li>
-                <a href="http://example.com/" class="social-link">Tw</a>
-            </li>
-            <li>
-                <a href="http://example.com/" class="social-link gh">Gh</a>
-            </li>
+        <ul class="social-list hero-social-list">
+            {% include social-links.html %}
         </ul>
     </div>
     <h2>THE FOUNDERS</h2>

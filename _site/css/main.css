@@ -183,6 +183,7 @@ a {
 }
 
 /* =============== FOOTER STYLES ================= */
+
 .footer {
     background-color: #000;
     padding: 10vh 0 15vh;
@@ -206,6 +207,21 @@ a {
 }
 .footer h3 span {
     color: #aaa;
+}
+/* ul tag; positioning of the list */
+.footer-social-list {
+    margin-top: 5vh;
+}
+.footer-social-list .social-link {
+    background: #000;
+    border: 3px solid #fff;
+    padding-top: 0.60em;
+}
+.footer-social-list .social-link:hover,
+.footer-social-list .social-link:active {
+    /* could also change to orange to be in sync with rest of footer highlight: #ed6e2f */
+    color: rgba(255, 255, 255, 0.90);
+    border-color: rgba(255, 255, 255, 0.90);
 }
 
 
