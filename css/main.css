@@ -1,0 +1,108 @@
+/* ====================================== USER-DEFINED  ======================================= */
+
+/* =========== GLOBAL STYLES ============= */
+
+body {
+    font-family: helvetica, arial, sans;
+}
+h1 {
+    margin-top: 0;
+}
+h2 {
+    font-size: 30px;
+}
+a {
+    color: rgba(255, 0, 0, 1);
+}
+
+/* =============== HERO STYLES ============= */
+
+.full-hero {
+    background-color: #c7dbfc;
+    height: 50vh;
+}
+
+/* ============== BIO STYLES =============== */
+
+.bio-wrapper {
+    background: rgba(250, 250, 250, 0.904);
+    font-size: 24px;
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: hidden;
+}
+.bio-box {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1rem;
+    margin: 40px 1% 0;
+    padding: 2%;
+    width: 23%;
+
+}
+.bio-box h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin: -40px 0 1em;
+    text-align: center;
+}
+.bio-box img {
+    width: 100%;
+}
+.bio-box .social-link {
+    display: block;
+}
+.bio-copy {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.bio-copy a {
+    color: rgba(0, 128, 0, 1);
+}
+#exec-bio {
+    background-color: #d3d3d3;
+}
+
+/* =============== SOCIAL STYLES ============= */
+
+.social-list {
+    list-style: none;
+    /* applied on ul, not li */
+    padding: 0;
+    text-align: center;
+}
+.social-list > li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+.social-link {
+    /* height: 100px; Inline elements don't accept height/width */
+    background: rgba(150, 150, 150, 0.5);
+    border-radius: 99px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: helvetica, arial, sans;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.5em;
+    line-height: 1;
+    padding-top: 0.85em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+/* ============ MISC PRACTICE ============ */
+
+.le-links {
+    /* Anchor elements */
+    color: rgb(0, 128, 0);
+    text-decoration: none;
+}
+.le-links:hover {
+    color: rgb(0, 110, 0);
+    text-decoration: underline;
+}
