@@ -16,16 +16,20 @@ h1 {
 h2 {
     font-size: 30px;
 }
+a {
+    color: #6397b5;
+}
 
-h2 + p {
+p {
+    line-height: 1.5;
+}
+
+h2 ~ p {
     font-size: 0.8em;
     font-style: italic;
     margin: 1em auto 0;
     max-width: 70%;
     text-align: center;
-}
-a {
-    color: rgba(255, 0, 0, 1);
 }
 
 /* ============= HEADER STYLES ============== */
@@ -90,18 +94,130 @@ a {
     color: #ed6e2f;
 }
 
+/* =============== FOOTER STYLES ================= */
+
+.footer {
+    background-color: #000;
+    padding: 10vh 0 15vh;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 50px;
+}
+
+.footer-nav a {
+    color: #ccc;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 2em 1em 0;
+}
+
+.footer h3 {
+    color: #fff;
+    padding-top: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer h3 span {
+    color: #aaa;
+}
+
+/* ul tag; positioning of the list */
+.footer-social-list {
+    margin-top: 5vh;
+}
+
+.footer-social-list .social-link {
+    background: #000;
+    border: 3px solid #fff;
+    padding-top: 0.60em;
+}
+
+.footer-social-list .social-link:hover,
+.footer-social-list .social-link:active {
+    /* could also change to orange to be in sync with rest of footer highlight: #ed6e2f */
+    color: rgba(255, 255, 255, 0.90);
+    border-color: rgba(255, 255, 255, 0.90);
+}
+
 
 /* =============== HERO STYLES ============= */
 
 .full-hero {
     background-color: #c7dbfc;
-    height: 50vh;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 10vh;
+
+}
+.full-hero:after {
+    bottom: 2vh;
+    color: #fff;
+    content: "﹀";
+    font-size: 36px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.hero-content {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.hero-content h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7vw;
+    margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #557c83;
+}
+.hero-content .social-link:hover {
+    background-color: #000;
+    color: #fff;
+}
+.hero-home {
+    background-image: url(/images/shark.jpg);
+    background-position: center top;
+}
+
+/* ================= HOMEPAGE STYLES =============== */
+
+.home-section {
+    margin: 6rem auto;
+    max-width: 980px;
+    width: 90vw;
+}
+.home-section h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.home-callout {
+    background-color: #000;
+    color: #fff;
+    padding: 7vh 0;
+}
+.callout-title {
+    font-size: 5.75vw;
+    text-align: right;
+    text-transform: uppercase;
+}
+.callout-copy {
+    font-size: 0.8rem;
 }
 
 /* ============== BIO STYLES =============== */
 
 .bio-wrapper {
-    background: rgba(250, 250, 250, 0.904);
     font-size: 24px;
     margin: 0 auto;
     max-width: 960px;
@@ -112,9 +228,9 @@ a {
     box-sizing: border-box;
     float: left;
     font-size: 1rem;
-    margin: 40px 1% 0;
-    padding: 2%;
-    width: 23%;
+    margin: 6rem 0 0;
+    padding: 0 3%;
+    width: 33%;
 
 }
 .bio-box h3 {
@@ -122,19 +238,17 @@ a {
     font-size: 1.5em;
     margin: -40px 0 1em;
     text-align: center;
+    text-transform: uppercase;
 }
 .bio-box img {
     width: 100%;
 }
 .bio-box .social-link {
     display: block;
+    margin: 2em auto 1em;
 }
 .bio-copy {
-    font-size: 1em;
-    line-height: 1.5;
-}
-.bio-copy a {
-    color: rgba(0, 128, 0, 1);
+    font-size: 0.75em;
 }
 #exec-bio {
     background-color: #d3d3d3;
@@ -180,70 +294,4 @@ a {
 }
 .gh:hover {
     background: rgb(37, 37, 37);
-}
-
-/* =============== FOOTER STYLES ================= */
-
-.footer {
-    background-color: #000;
-    padding: 10vh 0 15vh;
-    text-align: center;
-}
-.footer-logo img {
-    width: 50px;
-}
-.footer-nav a {
-    color: #ccc;
-}
-.footer-nav li {
-    display: inline-block;
-    margin: 2em 1em 0;
-}
-
-.footer h3 {
-   color: #fff;
-   padding-top: 1.5em;
-   text-transform: uppercase;
-}
-.footer h3 span {
-    color: #aaa;
-}
-/* ul tag; positioning of the list */
-.footer-social-list {
-    margin-top: 5vh;
-}
-.footer-social-list .social-link {
-    background: #000;
-    border: 3px solid #fff;
-    padding-top: 0.60em;
-}
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:active {
-    /* could also change to orange to be in sync with rest of footer highlight: #ed6e2f */
-    color: rgba(255, 255, 255, 0.90);
-    border-color: rgba(255, 255, 255, 0.90);
-}
-
-
-/* ============ MISC PRACTICE ============ */
-
-.le-links {
-    /* Anchor elements */
-    color: rgb(0, 128, 0);
-    text-decoration: none;
-}
-.le-links:hover {
-    color: rgb(0, 110, 0);
-    text-decoration: underline;
-}
-.end-page {
-    box-sizing: border-box;
-    margin-bottom: 10vh;
-}
-.end-page p {
-    font-size: 0.8em;
-    font-style: italic;
-    margin: 1em auto 0;
-    max-width: 70%;
-    text-align: center;
 }
