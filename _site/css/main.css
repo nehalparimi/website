@@ -20,6 +20,11 @@ h1 {
 h2 {
     font-size: 30px;
 }
+h4 {
+    color: #999;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 a {
     color: #6397b5;
 }
@@ -213,6 +218,17 @@ h2 ~ p {
 .home-section h2 {
     margin-bottom: 1.5rem;
     text-align: center;
+}
+.home-section h4 {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.home-section .post-header {
+    text-align: center;
+}
+.home-section .blog-posts {
+    margin: auto;
+    width: 75%;
 }
 .home-callout {
   display: flex;
