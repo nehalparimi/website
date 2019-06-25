@@ -126,7 +126,7 @@
 }
 
 
-/* =========== Inner Styles ========= */
+/* =========== Inner Image Styles ========= */
 
 .aside-author-info {
     display: flex;
@@ -141,4 +141,34 @@
 }
 .aside-author-info span {
     flex: 0 0 10em;
+}
+
+/* =========== Media Queries =========== */
+
+@media (max-width: 800px) {
+
+    /* Tutorial: */
+    .col-aside {
+        display: none;
+    }
+
+    /* Mine: */
+    /* .col-two {
+        flex-direction: column;
+    }
+    .col-two .col-aside {
+        order: 0;
+    }
+    .col-aside h4 {
+        text-align: center;
+    }
+    .blog-previews {
+        padding: 0;
+    }
+    .blog-title-list {
+        width: auto;
+    }
+    .blog-title-list > li {
+        display: inline-block;
+    }    */
 }
