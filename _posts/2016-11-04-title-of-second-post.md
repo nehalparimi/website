@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Le chaton qui était mignon...
+title: Le chaton mignon qui était de Paris...
 postHero: /images/shark.jpg
 author: Le chatton
 authorTwitter: http://twitter.com/mhartl
