@@ -102,7 +102,8 @@ h2 ~ p {
 }
 
 .nav-links a,
-.drop-trigger {
+.drop-trigger,
+.show-mobile-menu {
     font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -484,6 +485,14 @@ h2 ~ p {
     }
 }
 
+
+/* =========== Mobile Styles =========== */
+.mobile-menu-check,
+.show-mobile-menu {
+    display: none;
+}
+
+
 /* =========== Media Queries ========== */
 
 @media (max-width: 800px) {
@@ -494,19 +503,75 @@ h2 ~ p {
 
     /* HEADER STYLES */
     .header-nav {
-        padding: 2vh 1em 0 0;
+        background-color: #444;
+        box-sizing: border-box;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 10vh;
+        transition: all 0.9s ease-in-out;
+        width: 100vw;
+        z-index: 9;
     }
     .header-nav > li {
-        margin-left: 0.25em;
+        display: block;
+        margin-top: 1em;
     }
     .header-nav > li ~ li {
-        padding-left: 0.25em;
+        border: 0;
+        padding: 0;
+    }
+    .header-nav li:last-child {
+        margin-bottom: 1em;
+    }
+    .header-nav li:first-child a {
+        color: #fff;
+    }
+    /* HIDE DROPDOWN IN THE NAV MENU */
+    .header-nav .dropdown:hover .drop-menu,
+    .header-nav .drop-trigger:after {
+        display: none;
+    }
+    .header-nav .drop-trigger {
+        padding-right: 0;
+    }
+    .mobile-menu-check:checked~.header-nav {
+        max-height: 1000vh;
+    }
+    .mobile-menu-check:checked ~ .show-mobile-menu:after {
+        /* My trial at having an arrow to close the menu after opening */
+        /* border: 0.3em solid;
+        border-color: transparent transparent #ed6e2f;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: 0;
+        top: 0.3em;
+        width: 0; */
+
+        background-color: #000;
+        color: #ed6e2f;
+        content: "X";
+        left: 0;
+        position: absolute;
+        top: 1.5em;
+        /* width does the trick. :after width 100% means it covers the entire initial element */
+        width: 100%;
+        text-align: center;
     }
     .nav-links a {
         font-size: 3.25vw;
     }
     .header-logo {
         left: auto;
+    }
+
+    /* Mobile-Influenced: */
+    .mobile-menu-check:checked~.header-nav {
+        max-height: 1000px;
     }
 
     /* HOME STYLES */
@@ -526,4 +591,20 @@ h2 ~ p {
     .post-aside {
         display: none;
     }
+
+
+    /* MOBILE STYLES */
+
+    .show-mobile-menu {
+      display: block;
+      float: right;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-top: 1.5vh;
+      padding: 1.5em;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    
 }
