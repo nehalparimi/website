@@ -13,6 +13,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
+}
 h1 {
     font-size: 3rem;
     margin-top: 0;
@@ -462,16 +466,6 @@ h2 ~ p {
     text-decoration: none;
     vertical-align: middle;
     width: 2.5em;
-}
-.social-link:hover,
-.social-link:active {
-    background: rgb(82, 192, 255);
-}
-.fb:hover {
-    background: rgb(37, 86, 194)
-}
-.gh:hover {
-    background: rgb(37, 37, 37);
 }
 
 @media (max-width: 800px) {
